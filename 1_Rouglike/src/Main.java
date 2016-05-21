@@ -9,5 +9,7 @@ public class Main {
 	static void hello(){
 		System.out.println("HI");
 	}
-
+	static void iAmChanged(){
+		System.out.println("Another commit");
+	}
 }
