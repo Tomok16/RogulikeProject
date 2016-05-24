@@ -1,9 +1,23 @@
+import javax.swing.JFrame;
+import asciiPanel.AsciiPanel;
 
-public class Main {
+public class Main extends JFrame {
 
+	private static final long serialVersionUID = -3942095006060970495L;
+	private AsciiPanel terminal;
+	
+	public Main (){
+		super();
+		terminal = new AsciiPanel();
+		terminal.write("First attemp",1,1);
+		add(terminal);
+		pack();
+	}
+	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		hello();
+		Main app = new Main();
+		app.setDefaultCloseOperation(EXIT_ON_CLOSE);
+		app.setVisible(true);
 	}
 	
 	static void hello(){
