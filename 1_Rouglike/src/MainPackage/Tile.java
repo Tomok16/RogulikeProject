@@ -4,7 +4,7 @@ import java.awt.Color;
 import asciiPanel.AsciiPanel;
 
 public enum Tile {
-	FLOOR((char) 250, AsciiPanel.yellow), WALL((char) 177, AsciiPanel.yellow), BOUNDS('x', AsciiPanel.brightBlack);
+	FLOOR((char) 250, AsciiPanel.brightWhite), WALL((char) 177, AsciiPanel.brightWhite), BOUNDS('x', AsciiPanel.brightBlack);
 
 	private char glyph;
 	private Color color;
