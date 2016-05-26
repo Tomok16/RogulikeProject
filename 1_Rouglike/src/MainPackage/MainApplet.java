@@ -1,12 +1,16 @@
 package MainPackage;
 
 import java.applet.Applet;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
+
 import asciiPanel.AsciiPanel;;
 
-public class MainApplet extends Applet {
+public class MainApplet extends Applet implements KeyListener{
 
 	private static final long serialVersionUID = -944496907192112340L;
 	private AsciiPanel terminal;
+	private Screen screen;
 
 	public MainApplet(){
 		super();
@@ -23,6 +27,24 @@ public class MainApplet extends Applet {
 	public void repaint(){
 		super.repaint();
 		terminal.repaint();
+	}
+
+	@Override
+	public void keyPressed(KeyEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void keyReleased(KeyEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void keyTyped(KeyEvent e) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }
